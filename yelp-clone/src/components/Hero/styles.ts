@@ -43,8 +43,8 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     heroYelpLogo: {
       backgroundImage: 'url(https://s3-media0.fl.yelpcdn.com/assets/public/default.yji-1997cfe373f3a95a1467e9b715f3934a.png)',
-      height: '80px',
-      width: '160px',
+      height: '8em',
+      width: '16em',
       backgroundRepeat: 'no-repeat',
     },
     input: {
@@ -54,13 +54,45 @@ export const useStyles = makeStyles((theme: Theme) =>
     inputLabel: {
       fontWeight: 700,
       color: '#666',
-      padding: '0px 1em'
+      padding: '0px 1em',
     },
     searchBtn: {
       backgroundColor: '#d32323',
       color: '#fff',
       borderRadius: '0 3px 3px 0',
       '&:hover': { backgroundColor: '#be2020' },
+    },
+    categories: {
+      paddingTop: '2em',
+      paddingBottom:'12em',
+      color: '#fff',
+      fontSize: '1.5em',
+
+      '& > *': {
+        padding: '8px 14px',
+      },
+      '& a': {
+        fontWeight: 700,
+        textDecoration: 'none',
+        color: '#fff',
+        marginRight: '2px',
+        '&:hover': {
+          borderBottom: '1px solid',
+        },
+      },
+    },
+    creatorInfo: {
+      fontSize:'1.5em',
+      color:'#fff',
+      '& a': {
+        fontWeight: 700,
+        textDecoration: 'none',
+        color: '#fff',
+        marginRight: '2px',
+        '&:hover': {
+          borderBottom: '1px solid',
+        },
+      },
     },
   }),
 );

@@ -28,6 +28,7 @@ export const Hero: React.FC = () => {
             </Grid>
           </Grid>
         </AppBar>
+
         <div>
           <Grid container style={{ paddingTop: '8em' }}>
             <Grid item container justify='center'>
@@ -38,9 +39,9 @@ export const Hero: React.FC = () => {
             <Grid container>
               <Grid item xs={6}>
                 <Autocomplete
-                  options={['dwadwadwad']}
-                  id='free-solo-demo'
                   freeSolo
+                  options={['Restaurants', 'Delivery', 'Takeout', 'Accountant', 'Plumbers']}
+                  getOptionLabel={option => option}
                   renderInput={params => (
                     <TextField
                       className={classes.input}
@@ -48,6 +49,7 @@ export const Hero: React.FC = () => {
                       {...params}
                       placeholder='plumbers, delivery, takeout'
                       InputProps={{
+                        ...params.InputProps,
                         style: { borderRight: '1px solid #ccc' },
                         disableUnderline: true,
                         startAdornment: (
@@ -61,10 +63,11 @@ export const Hero: React.FC = () => {
                 />
               </Grid>
               <Grid item xs={6}>
-                <Grid item container direction="row" >
+                <Grid item container direction='row'>
                   <Autocomplete
-                  style={{flex:1}}
-                    options={['dwadwadwad']}
+                    style={{ flex: 1 }}
+                    options={['Costa Mesa']}
+                    getOptionLabel={option => option}
                     id='free-solo-demo'
                     freeSolo
                     renderInput={params => (
@@ -72,17 +75,13 @@ export const Hero: React.FC = () => {
                         className={classes.input}
                         {...params}
                         InputProps={{
+                          ...params.InputProps,
                           disableUnderline: true,
                           startAdornment: (
                             <InputAdornment position='start'>
                               <Typography className={classes.inputLabel}>Near</Typography>
                             </InputAdornment>
                           ),
-                          // endAdornment: (
-                          //   <Button disableRipple className={classes.searchBtn}>
-                          //     <SearchIcon />
-                          //   </Button>
-                          // ),
                         }}
                       />
                     )}
@@ -94,6 +93,29 @@ export const Hero: React.FC = () => {
               </Grid>
             </Grid>
           </div>
+          <Grid className={classes.categories} container justify='center'>
+            <div>
+              <a href='#'>Plumbers</a>
+            </div>
+            <div>
+              <a href='#'>Restaurants</a>
+            </div>
+            <div>
+              <a href='#'>Home Services</a>
+            </div>
+            <div>
+              <a href='#'>Delivery</a>
+            </div>
+            <div>
+              <a href='#'>Black Owned</a>
+            </div>
+          </Grid>
+          <Grid className={classes.creatorInfo} container alignItems='center' direction='column'>
+            <a href='#'>60 Beans and Kitchen & Cofee</a>
+            <Typography>
+              Photo by <a href='#'>Bardley H</a>
+            </Typography>
+          </Grid>
         </div>
       </Container>
     </div>
