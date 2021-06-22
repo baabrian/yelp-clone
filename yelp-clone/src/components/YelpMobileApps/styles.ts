@@ -7,6 +7,7 @@ export const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: '#f5f5f5',
     },
     businessCategoriesContainer: {
+      padding: '6em 0',
       '& h6': {
         padding: '1.5em 0',
         fontWeight: 700,

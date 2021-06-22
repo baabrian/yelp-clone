@@ -6,6 +6,7 @@ import { HotAndNew } from '../../components/Hot&New';
 import { BusinessCategories } from '../../components/BusinessCategories';
 import { YelpMobileApps } from '../../components/YelpMobileApps';
 import { RecentCollections } from '../../components/RecentCollections';
+import { FooterLanding } from '../../components/Footer/FooterLanding';
 import { useStyles } from './styles';
 
 export const Landing: React.FC = () => {
@@ -20,6 +21,7 @@ export const Landing: React.FC = () => {
       <RecentCollections />
       <BusinessCategories />
       <YelpMobileApps />
+      <FooterLanding />
     </div>
   );
 };

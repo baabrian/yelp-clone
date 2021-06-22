@@ -11,7 +11,12 @@ export const useStyles = makeStyles((theme: Theme) =>
         padding: '1.5em 0',
         fontWeight: 700,
         color: '#d32323',
+        marginTop: '4em',
       },
+    },
+
+    cards: {
+      padding: '2em',
     },
     cardContainer: {
       height: '17em',

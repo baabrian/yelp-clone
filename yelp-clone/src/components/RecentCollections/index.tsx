@@ -1,56 +1,167 @@
 import React from 'react';
-import { Container, Grid, Typography } from '@material-ui/core';
+import { useStyles } from './styles';
+import { Container, Grid, Typography, Avatar } from '@material-ui/core';
+import clsx from 'clsx';
 
 export const RecentCollections: React.FC = () => {
+  const classes = useStyles();
   return (
-    <Container>
+    <Container className={classes.allCollections}>
       <Typography variant='h6' align='center'>
         Recent Collections
       </Typography>
-      <Grid container direction='row'>
-        <Grid item direction='column' style={{ flexBasis: '50%' }}>
+      <Grid className={classes.collections} container direction='row'>
+        <Grid className={clsx(classes.recentCollectionsContainer, classes.recentCollectionCol)} item direction='column'>
           <Grid container wrap='nowrap'>
-            <Grid item>image</Grid>
-            <Grid item container direction='column'>
-              <Typography>Oc Food</Typography>
-              <Typography>7 places by Stephan F.</Typography>
+            <Grid item>
+              <a href='#'>
+                <Avatar
+                  className={classes.avatar}
+                  variant='rounded'
+                  src='https://s3-media0.fl.yelpcdn.com/bphoto/ZwQ-K8QhMdggSWQv-eMlgw/120s.jpg'
+                />
+              </a>
+            </Grid>
+            <Grid item container justify={'space-evenly'} direction='column'>
+              <Typography>
+                <a className={classes.fontHeavy} href='#'>
+                  OC Food
+                </a>
+              </Typography>
+              <Typography>&nbsp;</Typography>
+              <Typography className={classes.light}>
+                7 places by{' '}
+                <span>
+                  <a href='#'>Stephan F</a>
+                </span>
+              </Typography>
             </Grid>
           </Grid>
           <Grid container wrap='nowrap'>
-            <Grid item>image</Grid>
-            <Grid item container direction='column'>
-              <Typography>Oc Food</Typography>
-              <Typography>7 places by Stephan F.</Typography>
+            <Grid item>
+              <a href='#'>
+                <Avatar
+                  className={classes.avatar}
+                  variant='rounded'
+                  src='https://s3-media0.fl.yelpcdn.com/bphoto/ZwQ-K8QhMdggSWQv-eMlgw/120s.jpg'
+                />
+              </a>
+            </Grid>
+            <Grid item container justify={'space-evenly'} direction='column'>
+              <Typography>
+                <a className={classes.fontHeavy} href='#'>
+                  OC Food
+                </a>
+              </Typography>
+              <Typography>&nbsp;</Typography>
+              <Typography className={classes.light}>
+                7 places by{' '}
+                <span>
+                  <a href='#'>Stephan F</a>
+                </span>
+              </Typography>
             </Grid>
           </Grid>
           <Grid container wrap='nowrap'>
-            <Grid item>image</Grid>
-            <Grid item container direction='column'>
-              <Typography>Oc Food</Typography>
-              <Typography>7 places by Stephan F.</Typography>
+            <Grid item>
+              <a href='#'>
+                <Avatar
+                  className={classes.avatar}
+                  variant='rounded'
+                  src='https://s3-media0.fl.yelpcdn.com/bphoto/ZwQ-K8QhMdggSWQv-eMlgw/120s.jpg'
+                />
+              </a>
+            </Grid>
+            <Grid item container justify={'space-evenly'} direction='column'>
+              <Typography>
+                <a className={classes.fontHeavy} href='#'>
+                  OC Food
+                </a>
+              </Typography>
+              <Typography>&nbsp;</Typography>
+              <Typography className={classes.light}>
+                7 places by{' '}
+                <span>
+                  <a href='#'>Stephan F</a>
+                </span>
+              </Typography>
             </Grid>
           </Grid>
         </Grid>
-        <Grid item direction='column' style={{ flexBasis: '50%' }}>
+        <Grid className={clsx(classes.recentCollectionsContainer, classes.recentCollectionCol)} item direction='column'>
           <Grid container wrap='nowrap'>
-            <Grid item>image</Grid>
-            <Grid item container direction='column'>
-              <Typography>Oc Food</Typography>
-              <Typography>7 places by Stephan F.</Typography>
+            <Grid item>
+              <a href='#'>
+                <Avatar
+                  className={classes.avatar}
+                  variant='rounded'
+                  src='https://s3-media0.fl.yelpcdn.com/bphoto/ZwQ-K8QhMdggSWQv-eMlgw/120s.jpg'
+                />
+              </a>
+            </Grid>
+            <Grid item container justify={'space-evenly'} direction='column'>
+              <Typography>
+                <a className={classes.fontHeavy} href='#'>
+                  OC Food
+                </a>
+              </Typography>
+              <Typography>&nbsp;</Typography>
+              <Typography className={classes.light}>
+                7 places by{' '}
+                <span>
+                  <a href='#'>Stephan F</a>
+                </span>
+              </Typography>
             </Grid>
           </Grid>
           <Grid container wrap='nowrap'>
-            <Grid item>image</Grid>
-            <Grid item container direction='column'>
-              <Typography>Oc Food</Typography>
-              <Typography>7 places by Stephan F.</Typography>
+            <Grid item>
+              <a href='#'>
+                <Avatar
+                  className={classes.avatar}
+                  variant='rounded'
+                  src='https://s3-media0.fl.yelpcdn.com/bphoto/ZwQ-K8QhMdggSWQv-eMlgw/120s.jpg'
+                />
+              </a>
+            </Grid>
+            <Grid item container justify={'space-evenly'} direction='column'>
+              <Typography>
+                <a className={classes.fontHeavy} href='#'>
+                  OC Food
+                </a>
+              </Typography>
+              <Typography>&nbsp;</Typography>
+              <Typography className={classes.light}>
+                7 places by{' '}
+                <span>
+                  <a href='#'>Stephan F</a>
+                </span>
+              </Typography>
             </Grid>
           </Grid>
           <Grid container wrap='nowrap'>
-            <Grid item>image</Grid>
-            <Grid item container direction='column'>
-              <Typography>Oc Food</Typography>
-              <Typography>7 places by Stephan F.</Typography>
+            <Grid item>
+              <a href='#'>
+                <Avatar
+                  className={classes.avatar}
+                  variant='rounded'
+                  src='https://s3-media0.fl.yelpcdn.com/bphoto/ZwQ-K8QhMdggSWQv-eMlgw/120s.jpg'
+                />
+              </a>
+            </Grid>
+            <Grid item container justify={'space-evenly'} direction='column'>
+              <Typography>
+                <a className={classes.fontHeavy} href='#'>
+                  OC Food
+                </a>
+              </Typography>
+              <Typography>&nbsp;</Typography>
+              <Typography className={classes.light}>
+                7 places by{' '}
+                <span>
+                  <a href='#'>Stephan F</a>
+                </span>
+              </Typography>
             </Grid>
           </Grid>
         </Grid>
