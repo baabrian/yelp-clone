@@ -5,7 +5,7 @@ export const useStyles = makeStyles(theme =>
   createStyles({
     restaurants: {
       height: '100vh',
-      width: '100vw',
+      minWidth: '900px',
     },
   }),
 );

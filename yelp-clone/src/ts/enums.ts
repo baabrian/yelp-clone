@@ -1,4 +1,4 @@
 export enum ROUTES {
   LANDING = '/',
-  RESTAURANTS = '/retaurants',
+  RESTAURANTS = '/restaurants',
 }

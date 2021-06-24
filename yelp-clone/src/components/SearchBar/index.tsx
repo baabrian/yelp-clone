@@ -7,7 +7,7 @@ import SearchIcon from '@material-ui/icons/Search';
 export const SearchBar: React.FC = () => {
   const classes = useStyles();
   return (
-    <Grid container>
+    <Grid container className={classes.searchBar}>
       <Grid item xs={6}>
         <Autocomplete
           freeSolo

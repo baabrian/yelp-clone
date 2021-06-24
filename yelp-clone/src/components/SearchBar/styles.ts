@@ -3,6 +3,10 @@ import { createStyles, makeStyles } from '@material-ui/styles';
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
+    searchBar: {
+      boxShadow: '0 2px 18px rgb(0 0 0 / 15%)',
+      borderRadius: '4px',
+    },
     input: {
       background: '#fff',
       padding: '6px 0px',
