@@ -7,7 +7,7 @@ export const FiltersPrice = () => {
   return (
     <Grid container direction='column'>
       <Typography className={classes.fontBold}>Filters</Typography>
-      <ButtonGroup size='small'>
+      <ButtonGroup size='small' style={{ padding: '1em 0' }}>
         <Button>$</Button>
         <Button>$$</Button>
         <Button>$$$</Button>
