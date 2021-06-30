@@ -4,9 +4,10 @@ import { createStyles, makeStyles } from '@material-ui/styles';
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     banner: {
-      padding: '2em',
+      padding: '3em 2em',
       border: '2px dashed #e6e6e6',
       minWidth: '75em',
+      borderRadius: '9px',
       '& > *': {
         padding: '0 2em',
       },
